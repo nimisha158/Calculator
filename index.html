@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row pt-5 mt-5">
+        <div class="col-lg-4 col-md-2 col-xs-1"></div>
+        <div class="col-lg-4 col-md-8 col-xs-10">
+          <div class="row">
+            <div class="col-md-12 bg-dark pt-5 pb-4 text-center rounded">
+              <h1 class="pb-3 text-muted">Calculator</h1>
+              <div class="row">
+                <input
+                  type="text"
+                  class="form-control mb-4 mx-auto d-block w-75"
+                  id="box"
+                />
+              </div>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <button class="btn btn-danger w-100" onclick="clr()">
+                    C
+                  </button>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(7)">
+                    7
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(8)">
+                    8
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(9)">
+                    9
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-warning w-100" onclick="opr('+')">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(4)">
+                    4
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(5)">
+                    5
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(6)">
+                    6
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-warning w-100" onclick="opr('-')">
+                    -
+                  </button>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(1)">
+                    1
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(2)">
+                    2
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(3)">
+                    3
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-warning w-100" onclick="opr('/')">
+                    /
+                  </button>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num(0)">
+                    0
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-secondary w-100" onclick="num('.')">
+                    .
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-success w-100" onclick="result()">
+                    =
+                  </button>
+                </div>
+                <div class="col-3">
+                  <button class="btn btn-warning w-100" onclick="opr('*')">
+                    X
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-xs-1"></div>
+      </div>
+    </div>
+    <script src="action.js"></script>
+  </body>
+</html>
